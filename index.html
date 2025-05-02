@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/l.css">
+</head>
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light  " style="background-color: rgb(54, 130, 162, 0.7);">
+    <div class="container-fluid">
+      <div class="img" style=" width: 80px; height: 80px; border-radius: 50%; margin-left: 50px; "></div>
+      <a class="navbar-brand" href="#" style="font-size: 35px; margin-left:10px; color: #9e0606;">EYGPT</a>
+      <div class="line1"></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color: azure;">
+          <li class="nav-item">
+            <a class="nav-link active"  style="color: azure; font-size: 20px; margin-left: 20px;" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" style="color: azure; margin-left: 20px; font-size: 20px;" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle border rounded-3"  href="#" id="navbarDropdown"  style="margin-left: 20px; font-size: 20px; color: azure;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Trips
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(54, 130, 162, 0.7) ;color: aliceblue; border-radius: 15px;">
+              <li><a class="dropdown-item" href="#">Cairo</a></li>
+              <li><a class="dropdown-item" href="#">Aswan</a></li>
+              <li><a class="dropdown-item" href="#">Alex</a></li>
+              <li><a class="dropdown-item" href="#">Dahab</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">See More..</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled"  style="color: azure; margin-left: 20px; font-size: 20px;" href="#" tabindex="-1" aria-disabled="false">About</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" style="font-size: 20px; width: 280px; height: 50px;" aria-label="Search">
+          <button class="btn btn-outline-success" style="background-color: azure; color: rgb(15, 145, 171 ); font-size: 20px; width: 100px; height: 50px;" type="submit">Search</button>
+         <!--- <button class="btn btn-outline-primary mx-2   btn btn-lg" type="submit" data-bs-toggle="model" style="background-color: #9e0606;color: azure;" data-bs-target="#exampleModel1" aria-expanded="false" >LogIn</button>-->
+         <button type="button" class="btn btn-dark me-2" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #9e0606;color: azure; font-size: 20px; width: 100px; height: 50px; margin-left: 5px;">
+            LogIn
+        </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Modal -->
+  <div class="modal fade" data-bs-backdrop="static" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">LogIn</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="m-3">
+                          <label class="form-label text-dark">Email address</label>
+                          <input type="email" class="form-control text-dark border-3 border-danger rounded-2"
+                              aria-describedby="emailHelp">
+                          <p class="form-text text-secondary">We'll never share your email with anyone else.</p>
+                      </div>
+                      <div class="m-3">
+                          <label class="form-label text-dark">Password</label>
+                          <input type="password" class="form-control text-dark border-3 border-danger rounded-2">
+                      </div>
+                      <div class="m-3 form-check">
+                          <div class="form-check form-switch">
+                              <input class="form-check-input  border-dark" style="background-color: #9e0606;color: azure;" type="checkbox" role="switch" checked>
+                              <label class="form-check-label text-dark" for="flexSwitchCheckChecked">Remmember me</label>
+                          </div>
+                      </div> <!-- /form check -->
+
+                  </form>
+              </div>
+              <div class="modal-footer d-flex  justify-content-between">
+                  <button type="submit" class="btn  text-light" style="background-color: #9e0606;color: azure;">Login</button>
+                  <button type="button" class="btn  text-light" style="background-color: #9e0606;color: azure;" data-bs-dismiss="modal">Close</button>
+              </div> <!-- /model-footer -->
+          </div>
+      </div>
+  </div>
+
+  <aside>
+      <div class="container-fluid p-0 " style="position: relative;">
+
+          <div class="d-flex flex-column justify-content-between ms-auto"
+              style="position: fixed;z-index: 990;top: 250px;right:30px;">
+              <div class="aside-icon " style="color:rgb(54, 130, 162, 0.7) ;"><a href="#"><i class="fab fa-facebook-square"></i></a></div>
+              <div class="aside-icon "><a href="#"><i class="fab fa-whatsapp-square  "></i></a></div>
+              <div class="aside-icon "><a href="#"><i class="fab fa-twitter-square  "></i></a></div>
+              <div class="aside-icon "><a href="#"><i class="fab fa-linkedin  "></i></a></div>
+              <div class="aside-icon "><a href="#"><i class="fab fa-instagram-square  "></i></a></div>
+          </div>
+          </div>
+  </aside>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/cairo - Copy.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block" style="background-color: rgb(142, 189, 237,.5 );border-radius: 25px; ">
+          <h5 style="font-size: 30PX;">CAIRO</h5>
+          <p style="font-size: 25PX;">We had such a great time in Egypt!</p>
+          <button class="btn1 btn-outline-primary= text-white" style="background-color: rgb(163, 202, 233); width: 120PX; border-radius:15PX; height: 50PX; border: none; font-size: 18PX; "  type="submit">Visit  Us</button>
+
+        </div>
+      </div>
+      
+    
+      <div class="carousel-item">
+       <img src="image/aswan.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block " style="background-color: rgb(142, 189, 237,.5 );border-radius: 25px; ">
+            <h5 style="font-size: 30PX;">ASWAN</h5>
+             <p style="font-size: 25PX;">Thank you, Aswan!</p>
+             <button class="btn1btn-outline-primary= text-white" style="background-color: rgb(163, 202, 233);  width: 120PX; border-radius:15PX; height: 50PX; border: none; font-size: 18PX;  "  type="submit">Visit  Us</button>
+            </div>
+          </div>
+      
+      <div class="carousel-item">
+        <img src="image/alexb.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block" style="background-color: rgb(142, 189, 237,.5 );border-radius: 25px; ">
+          <h5 style="font-size: 30PX;">ALEX</h5>
+          <p style="font-size: 25PX;">We love this city!</p>
+          <button class="btn1 btn-outline-primary= text-white" style="background-color: rgb(163, 202, 233); width: 120PX; border-radius:15PX; height: 50PX; border: none; font-size: 18PX; "  type="submit">Visit  Us</button>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/daha.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block" style="background-color:  rgb(142, 189, 237,.5 );border-radius: 25px; ">
+          <h5 style="font-size: 30PX;">DAHAB</h5>
+          <p style="font-size: 25PX;">We love this city!</p>
+          <button class="btn1 btn-outline-primary= text-white" style="background-color: rgb(163, 202, 233); width: 120PX; border-radius:15PX; height: 50PX; border: none; font-size: 18PX; " type="submit">Visit  Us</button>
+
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <section>
+      <div class="mt-4 p-5 text-light border rounded mx-0" style="background-color: rgba(89, 185, 226, 0.5);">
+          <h2 class="h1" style="margin-top: -5px; color: #9e0606;">WELCOME</h2>
+<p> Are younplanning to visit Eygpt? We offer the ultimate tour in Eygpt, covering Cairo, alex From a one day trip to a 10 day dream vacation, we will take care of all your needs book hotels 24/7 Customer Service.
+          ...</p>
+          <button type="button" class="btn btn-outline-light py-2 px-5" style="font-size: 20px; background-color: aliceblue; color: rgb(71, 154, 213);">Learn More</button>
+      </div>
+      <div class="mt-4 p-5 text-light border rounded mx-0" style="background-color: rgb(54, 130, 162) ;">
+          <h2 style="text-align: center; font-style: italic;" class="h1">Popular destination in Eygpt</h2>
+      </div>
+  </section>
+  <br>
+  <section>
+      <div id="accordion">
+
+          <div class="card  text-dark"  style="background-color:  rgba(164, 210, 229, 0.5);">
+              <div class="card-header">
+                  <a class="btn btn-light" data-bs-toggle="collapse" href="#collapseOne"  style="color: #9e0606; font-size: 28px; background-color: none;">
+                      GIZA CITY
+                  </a>
+              </div>
+              <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                  <div class="card-body">
+                      " Egypt may be known for ancient treasures and rich history, but there is more to this nation than you might expect. From surreal waters and golden sand beaches to remarkable architecture and natural therapies, Egypt is worthy of anyone bucket list."
+                  </div>
+              </div>
+          </div>
+
+          <div class="card text-dark"  style="background-color: rgba(164, 210, 229, 0.5);">
+              <div class="card-header">
+                  <a class="collapsed btn btn-light" data-bs-toggle="collapse" href="#collapseTwo" style="color: #9e0606; font-size: 28px; background-color: ;"  >
+                      LUXOR CITY
+                  </a>
+              </div>
+              <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                      "First of all, Ancient Egypt is one of the most interesting and oldest civilisations in the world. The Great Pyramid, located at Giza on the west bank of the Nile River north of, is the only wonder of the ancient world that has survived to the present day."
+
+                  </div>
+              </div>
+          </div>
+
+          <div class="card  text-dark"  style="background-color:  rgba(164, 210, 229, 0.5);">
+              <div class="card-header">
+                  <a class="collapsed btn btn-light" data-bs-toggle="collapse" href="#collapseThree"  style="color: #9e0606; font-size: 28px; background-color: none;" >
+                      GALALA CITY
+                  </a>
+              </div>
+              <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                      "It is part of a group of three pyramids–Khufu, Khafra and Menkaura –that were built between 2700 B.C. and 2500 B.C. as royal tombs. The largest and most impressive is Khufu, known as “The Great Pyramid,” which covers 13 acres and is believed to contain more than 2 million stone blocks that weigh from two to 30 tons"
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </section>
+  <section>
+      <hr>
+      <div class="tran mx-auto mt-3 p-2  text-light text-center text-shadow rounded-3 shadow-lg " style="background-color: rgb(54, 130, 162) ;">
+          <h1>Translate From Arabic To English</h1>
+      </div>
+      <!-- card1 -->
+      <div class="card p-3  text-white shadow-lg " style="background-color: rgba(89, 185, 226, 0.5);" >
+          <div class="card-body">
+              <h4 class="card-title " style="">Write and Translate Press Here </h4>
+              <button
+                  class="btn btn-outline-light  border border-2  shadow-lg "  style="font-size: 18px; color:r ;" >
+                  Copy
+              </button>
+              <br>
+              <textarea id="sentence" class="form-control mx-auto mt-3" rows="5" id="comment" placeholder="Translate:"
+                  name="text"></textarea>
+          </div>
+      </div>
+      <!-- /card1 -->
+      <hr>
+      <div class="tran mx-auto mt-3 p-2  text-light text-center text-shadow rounded-3 shadow-lg "  style="background-color: rgb(54, 130, 162) ;">
+          <h1>Translate From Arabic To French</h1>
+      </div>
+      <!-- card2 -->
+      <div class="card p-3  text-white shadow-lg "  style="background-color: rgba(89, 185, 226, 0.5);">
+          <div class="card-body">
+              <h4 class="card-title ">Write and Translate Press Here  </h4>
+              <button class="btn btn-outline-light border border-2  shadow-lg " style="font-size: 18px;">
+                  Copy
+              </button>
+              <br>
+              <textarea id="sentence" class="form-control mx-auto mt-3" rows="5" id="comment" placeholder="Write:"
+                  name="text"></textarea>
+          </div>
+      </div>
+      <!-- /card2 -->
+      <hr>
+      <div class="tran mx-auto mt-3 p-2  text-light text-center text-shadow rounded-3 shadow-lg "  style="background-color: rgb(54, 130, 162) ;">
+          <h1>Translate From Arabic To German </h1>
+      </div>
+      <!-- card3 -->
+      <div class="card p-3  text-white shadow-lg "  style="background-color: rgba(89, 185, 226, 0.5);">
+          <div class="card-body">
+              <h4 class="card-title ">Write and Translate Press Here  </h4>
+              <button class="btn btn-outline-light border border-2  shadow-lg " style="font-size: 18px;">
+                  Copy
+              </button>
+              <br>
+              <textarea id="sentence" class="form-control mx-auto mt-3" rows="5" id="comment" placeholder="Write:"
+                  name="text"></textarea>
+          </div>
+      </div>
+      <!-- /card3 -->
+  </section>
+  <section>
+      <div class="section6"><!-- sec6parent -->
+        <div class="pic6">
+        <div class="overlay">
+        <div class="sec6-container"></div></div></div></div>
+      <div class="tran mx-auto mb-3 p-3  text-light text-center text-shadow rounded-3 shadow-lg " style="background-color: rgb(54, 130, 162);">
+          <h1 class="title" style="font-size: 50px; ">Recent Arrival</h1>
+      </div>
+  </section>
+  <section>
+      <div class="row justify-content-around pb-5 ">
+          <div class="eff-1 card-my1 card bg-light text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+              <img  class="card-my2 card-img-top" src="image/ca1.jpg" alt="Card image">
+              <h1>Eygpt</h1>
+              <div style="text-align: center ;" class="card-body"  style="color: black;">
+                  <h4 class="card-title" style="color: #9e0606; margin-top: -50px; font-size: 30px;">CAIRO</h4>
+                  <p style="font-size: 17px; color: black; " class="card-text mt-3"  >Capital Of Eygpt</p>
+                  <a href="#" class="btn btn-outline-dark py-2 my-2 w-50" style="color: azure; background-color: rgb(58, 160, 194); font-size: 20px;" >Know More</a>
+              </div>
+          </div>
+          <div class="card-my1 eff-1 card bg-light text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+              <img class="card-my2 card-img-top" src="image/al1.jpg" alt="Card image">
+              <div style="text-align: center;"  class="card-body">
+                  <h4 class="card-title" style="color: #9e0606; font-size: 30px;">ALEXANDRIA</h4>
+                  <p style="font-size: 17px; color: black; margin-top: 20px;" class="card-text">The Bride of the Mediterranean</p>
+                  <aa href="#" class="btn btn-outline-dark py-2 my-2 w-50" style="color: azure; background-color: rgb(58, 160, 194); font-size: 20px; margin-top: 10px;">Know More</a>
+              </div>
+          </div>
+          <div class="card-my1 eff-1 card bg-light text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+              <img class="card-my2 card-img-top" src="image/lu1.jpg" alt="Card image">
+              <div style="text-align: center;"  class="card-body">
+                  <h4 class="card-title" style="color: #9e0606;font-size: 30px;">LUXOR</h4>
+                  <p style="font-size: 17px; color: black;  margin-top: 20px;" class="card-text">The Capital of the Ancient Kingdom</p>
+                  <aa href="#" class="btn btn-outline-dark py-2 my-2 w-50"  style="color: azure; background-color: rgb(58, 160, 194); font-size: 20px; margin-top: 10px;">Know More</a>
+              </div>
+          </div>
+
+          <div class="card-my1 eff-1 card bg-light text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+              <img class="card-my2 card-img-top" src="image/as1.jpeg" alt="Card image">
+              <div style="text-align: center;"  class="card-body">
+                  <h4 class="card-title" style="color: #9e0606; font-size: 30px;">ASWAN</h4>
+                  <p style="font-size: 17px; color: black; margin-top: 20px; " class="card-text">Nubian City in The South of Eygpt</p>
+                  <aa href="#" class="btn btn-outline-dark py-2 my-2 w-50"   style="color: azure; background-color: rgb(58, 160, 194); font-size: 20px; margin-top: 10px;">Know More</a>
+              </div>
+          </div>
+
+          <div class="card-my1 eff-1 card bg-light text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+              <img class="card-my2 card-img-top" src="image/ne1.jpeg" alt="Card image">
+              <div style="text-align: center;"  class="card-body">
+                  <h4 class="card-title" style="color: #9e0606;font-size: 30px;">NEW CAPITAL</h4>
+                  <p style="font-size: 17px; color: black; margin-top: 20px; " class="card-text">The Newv Administrative Capital </p>
+                  <aa href="#" class="btn btn-outline-dark py-2 my-2 w-50"   style="color: azure; background-color: rgb(58, 160, 194); font-size: 20px; margin-top: 10px;">Know More</a>
+              </div>
+          </div>
+          <div class="card-my1 eff-1 card bg-light text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+              <img class="card-my2 card-img-top" src="image/sh1.jpeg" alt="Card image">
+              <div style="text-align: center;"  class="card-body">
+                  <h4 class="card-title" style="color: #9e0606; font-size: 30px;">SHARM EL EHEIKH</h4>
+                  <p style="font-size: 17px; color: black;  margin-top: 20px;" class="card-text">Beautiful City in Eygpt</p>
+                  <aa href="#" class="btn btn-outline-dark py-2 my-2 w-50"   style="color: azure; background-color: rgb(58, 160, 194); font-size: 20px; margin-top: 10px;">Know More</a>
+              </div>
+          </div>
+
+          <div class="card-my1 eff-1 card bg-light text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+              <img class="card-my2 card-img-top" src="image/si1.jpeg" alt="Card image">
+              <div style="text-align: center;"  class="card-body">
+                  <h4 class="card-title"style="color: #9e0606; font-size: 30px;">SIWA</h4>
+                  <p style="font-size: 17px; color: black; margin-top: 20px; " class="card-text">Sunset Oasis</p>
+                  <aa href="#" class="btn btn-outline-dark py-2 my-2 w-50"   style="color: azure; background-color: rgb(58, 160, 194); font-size: 20px; margin-top: 10px;">Know More</a>
+              </div>
+          </div>
+          <div class="card-my1 eff-1 card bg-light text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+              <img class="card-my2 card-img-top" src="image/hu1.jpeg" alt="Card image">
+              <div style="text-align: center;"  class="card-body">
+                  <h4 class="card-title" style="color: #9e0606; font-size: 30px;">HURGHADA</h4>
+                  <p style="font-size: 17px; color: black;  margin-top: 20px; " class="card-text">City on The Red Sea</p>
+                  <aa href="#" class="btn btn-outline-dark py-2 my-2 w-50"   style="color: azure; background-color: rgb(58, 160, 194); font-size: 20px; margin-top: 10px;">Know More</a>
+              </div>
+          </div>
+
+          </div>
+
+  </section>
+  <section>
+    <div class="section7"><!-- sec6parent -->
+      <div class="pic7">
+      <div class="overlay">
+      <div class="sec7-container"></div></div></div></div>
+      <div class="card p-3  text-white shadow-lg " style="background-color: rgb(54, 130, 162);">
+          <h2 class="text-center text-light m-3 title" style="font-size: 40px;  background-color: rgb(54, 130, 162);">Thanks For</h2>
+      </div>
+  </section>
+  <section class="thanks">
+      <div class="container" style="width: 100%; min-height: 500px;">
+
+          <div class="row">
+              <div class="thankcard-parent col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 mb-4">
+                  <div class="card card-hover text-white card-bg click-col thankcard"
+                      style="background-image:url('image/man1.jpg'); border-radius: 17px !important;">
+                      <div class="card-img-overlay d-flex flex-column">
+                          <div class="card-body">
+
+                              <h4 class="card-title mt-0 "><a class="text-white" herf="#">All Thanks And Appreciation</a>
+                              </h4>
+                              <small><i class="far fa-clock"></i> August 15, 2024</small>
+                          </div>
+                          <div class="card-footer">
+                              <div class="media">
+                                  <img class="mr-3 rounded-circle" src="image/man1.jpg"
+                                      alt="Generic placeholder image" style="width:100px; height: 100px; border-radius: 50%;">
+                                  <div class="media-body">
+                                      <h6 class="my-0 text-white d-block">ُEng. Ahmad Nasser</h6>
+                                      <small>Front End</small>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+              <div class="thankcard-parent col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 mb-4">
+                  <div class=" card card-hover text-white card-bg click-col thankcard"
+                      style="background-image:url('image/man2.jpg'); border-radius: 17px !important;">
+                      <div class="card-img-overlay d-flex flex-column">
+                          <div class="card-body">
+
+                              <h4 class="card-title mt-0 "><a class="text-white" herf="#">All Thanks And Appreciation</a>
+                              </h4>
+                              <small><i class="far fa-clock"></i> August 15, 2024</small>
+                          </div>
+                          <div class="card-footer">
+                              <div class="media">
+                                  <img class="mr-3 rounded-circle" src="image/man2.jpg" alt="Generic placeholder image"
+                                      style="width:100px; height: 100px; border-radius: 50%; background-size: cover;">
+                                  <div class="media-body">
+                                      <h6 class="my-0 text-white d-block">Eng. Youssef Gamal</h6>
+                                      <small>Website programmer</small>
+                                  </div>
+                              </div>
+                          </div> <!-- card-footer -->
+                      </div> <!-- /card-img-overlay -->
+                  </div> <!-- /card -->
+              </div> <!-- /card3 -->
+              <div class="thankcard-parent col-12 col-lg-6 col-xl-4 col-md-12 col-sm-12 mb-4 card3">
+                  <div class="card card-hover text-white card-bg click-col thankcard"
+                      style="background-image:url('image/man3.jpg'); border-radius: 17px !important;">
+                      <div class="card-img-overlay d-flex flex-column">
+                          <div class="card-body">
+
+                              <h4 class="card-title mt-0 "><a class="text-white" herf="#">All Thanks And Appreciation</a>
+                              </h4>
+                              <small><i class="far fa-clock"></i> August 15, 2024</small>
+                          </div>
+                          <div class="card-footer">
+                              <div class="media">
+                                  <img class="mr-3 rounded-circle" src="image/man3.jpg" alt="Generic placeholder image"
+                                      style="width:100px; height: 100px; border-radius: 50%;">
+                                  <div class="media-body">
+                                      <h6 class="my-0 text-white d-block">ُEng.Amr Ezz</h6>
+                                      <small>Website programmer</small>
+                                  </div>
+                              </div>
+                          </div> <!-- card-footer -->
+                      </div> <!-- /card-img-overlay -->
+                  </div> <!-- /card -->
+              </div> <!-- /card3 -->
+
+          </div> <!-- /row -->
+
+      </div>
+  </section>
+  <section>
+      <div class="h1 text-center  py-5 text-light" id="pageHeaderTitle" style="font-size: 40px;  background-color: rgb(54, 130, 162) ;">Latest Blog</div>
+  </section>
+  <section class="container light">
+      <div class="paren-art d-flex flex-column container py-2">
+          <div  class="card card-custom w-100 text-light d-flex flex-row-reverse my-5" style="background-color: rgb(163, 202, 233); ">
+              <div class="card-img-custom1" >
+              </div>
+              <div class="card-body card-body-custom">
+                  <h4  style="font-size: 40px;width: 40%;margin: 20px;position: relative; color: #9e0606;"  class="card-title py-2">ASWAN</h4>
+                  <p style="text-transform: capitalize;font-size: 17px;" class="card-text-art px-4">I Heard A lot of Similar words before visiting Aswan & Nuba and to be honest i Though that people exaggerating but when i Visited it I Knew that they Were right , That Every Single Word is simply true and the Fact is even more beautiful Specially Nuba .</p>
+                      <button type="button" class="btn btn-outline-light  w-50 py-3 mx-4"style="font-size: 22px;">More</button>
+              </div>
+          </div>
+
+          <div  class="card card-custom w-100  text-light flex-row" style="background-color: rgb(163, 202, 233);">
+              <div style="clip-path: polygon(0 0, 60% 0, 88% 100%, 0 100%); width: 30%; " class="card-img-custom"  >
+              </div>
+              <div class="card-body card-body-custom">
+                  <h4 style="font-size: 40px;width: 40%;margin: 20px;position: relative; color: #9e0606;" class="card-title py-2">CAIRO</h4>
+                  <p style="text-transform: capitalize;font-size: 17px;" class="card-text-art px-4">Cairo is located in northeastern Egypt, on the banks of the Nile River. Our flight landed at Cairo International Airport. We got on the bus to take us to the hotel. As the bus passed through the streets of Cairo, I noticed that it was a vibrant city.</p>
+                      <button type="button" class="btn btn-outline-light  w-50 py-3 mx-4" style="font-size: 22px;">More</button>
+              </div>
+          </div>
+          <div  class="card card-custom w-100  text-light d-flex flex-row-reverse my-5"  style="background-color: rgb(163, 202, 233);">
+              <div class="card-img-custom2">
+              </div>
+              <div class="card-body card-body-custom">
+                  <h4 style="font-size: 40px;width: 40%;margin: 20px;position: relative; color: #9e0606;" class="card-title py-2">LUXOR</h4>
+                  <p style="text-transform: capitalize;font-size: 17px;" class="card-text-art px-4">The official capital of the province of Luxor located in the southern side of the Arab Republic of Egypt,  About 670 kilometers away from Cairo,  This city was called the City of the Sun.</p>
+                      <button type="button" class="btn btn-outline-light  w-50 py-3 mx-4"style="font-size: 22px;">More</button>
+              </div>
+          </div>
+
+
+      </div>
+    </section>
+  <section class="mb-5" >
+      <div style="margin: auto; " class="container d-flex row justify-content-around">
+      <h2 class="Media-title h1 text-center py-5 " style="color: rgb(54, 130, 162) ;">Join Us</h2>
+      <div class="card Media  col-sm-12 col-md-6 col-lg-4" style=" background-color: rgb(54, 130, 162) ;">
+          <h3 class="text-center text-light title py-2">Follow Us In</h3>
+          <i class="fab fa-twitter-square" style="color:  rgb(163, 202, 233);"></i>
+          <a class="text-light">Go To Link</a>
+      </div>
+      <div class="card Media  col-sm-12 col-md-6 col-lg-4" style=" background-color: rgb(54, 130, 162) ;">
+          <h3 class="text-center text-light title py-2">Follow Us In</h3>
+          <i class="fab fa-whatsapp-square" style="color: rgb(163, 202, 233);"></i>
+          <a class="text-light">Go To Link</a>
+      </div>
+      <div class="card Media  col-sm-12 col-md-6 col-lg-4" style=" background-color: rgb(54, 130, 162) ;">
+          <h3 class="text-center text-light title py-2">Follow Us In</h3>
+          <i class="fab fa-linkedin" style="color: rgb(163, 202, 233);"></i>
+          <a class="text-light">Go To Link</a>
+      </div>
+      <div class="card Media  col-sm-12 col-md-6 col-lg-4" style=" background-color: rgb(54, 130, 162) ;">
+          <h3 class="text-center text-light title py-2">Follow Us In</h3>
+          <i class="fab fa-instagram-square" style="color: rgb(163, 202, 233);"></i>
+          <a class="text-light">Go To Link</a>
+      </div>
+      </div>
+  </section>
+  <footer style="height: 370px; background-color: rgb(54, 130, 162) ;" class="w-100 " >
+      <div class="container d-flex justify-content-between">
+      <div class="footer-item">
+          <ul>
+              <h3 class="text-light">Store Information</h3>
+              <li><a href="#"><i class="fas fa-map-marker-alt px-2"></i> Lighthouse - Store
+              507-Union Trade Centre
+              United States</a></li>
+              <li><a href="#"><i class="fas fa-phone-alt px-2"></i> 01025529010</a></li>
+              <li><a href="#"><i class="far fa-envelope px-2"></i> ayt503245@gmail.com</a></li>
+          </ul>
+      </div>
+      <div class="footer-item"  >
+          <ul>
+              <h3 class="text-light">Information</h3>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Delivery Information</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Site Map</a></li>
+          </ul>
+      </div>
+      <div class="footer-item footer-item-cards" >
+          <img src="image/paypal.png"  alt="#">
+          <img src="image/master_card.png" alt="#">
+          <img src="image/visa.png" alt="#">
+          <img src="image/american_express.png" alt="#">
+          <img src="image/discover.png" alt="#">
+      </div>
+      </div>
+  </footer>
+
+      <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
